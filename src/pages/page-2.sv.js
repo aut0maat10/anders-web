@@ -3,9 +3,9 @@ import Link from 'gatsby-link'
 
 const SecondPage = () => (
   <div>
-    <h1>Oi da segunda pagina!</h1>
-    <p>Bem viando a pagina 2</p>
-    <Link to="/pt/">Voltar pro início</Link>
+    <h1>Andra sidan!</h1>
+    <p>Hej från sid 2</p>
+    <Link to="/sv/">Tillbaka</Link>
   </div>
 )
 
