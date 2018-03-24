@@ -5,6 +5,8 @@ import SelectLanguage from './SelectLanguage'
 import andersHero from '../images/header.jpg'
 import styled from 'styled-components'
 import { FormattedMessage } from 'react-intl'
+import Typed from 'typed.js'
+import TypeWriter from '../components/Typed'
 
 const mainColor = '#272727'
 const secondaryColor = '#272727'
@@ -30,7 +32,12 @@ const Title = styled.h1`
   color: ${props => props.color || mainColor}
 `;
 
-const Header = (props) => (
+const Header = (props) => {
+  // var typed = new Typed('#typed', {
+  //   stringsElement: '#typed-strings',
+  //   typeSpeed: 130
+  // });
+  return (
     <Background>
     <div
       style={{
@@ -47,7 +54,7 @@ const Header = (props) => (
             textDecoration: 'none',
           }}
         >
-          Gatsby
+          Home
         </Link>
       </h1>
       <SelectLanguage langs={props.langs} />
@@ -58,13 +65,26 @@ const Header = (props) => (
           {props.langs.title}
         </FormattedMessage>
       </Title>
-      <p>Välkommen till Gatsby.</p>
-      <p>Testing testing.</p>
       
+      <div id="typed-strings">
+          <FormattedMessage id="typeWriter.comedian"/>
+          <FormattedMessage id="typeWriter.host" />
+          <FormattedMessage id="typeWriter.writer" />
+      </div>
+      <TypeWriter />
     </div>
-    </Background>
-  
+    </Background>  
 )
+}
 
 export default Header;
 {/* <Link to="/sv/page-2/">Till sid 2</Link> */}
+
+{/* <div>
+  <FormattedMessage id="typeWriter">
+    <TypeWriter
+      className="TypeWriter"
+      strings={props.langs.typeWriter}
+    />
+  </FormattedMessage>
+</div> */}
