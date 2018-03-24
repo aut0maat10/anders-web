@@ -1,3 +1,4 @@
 module.exports = {
-  'selectLanguage': 'Välj språk'
+  'selectLanguage': 'Välj språk', 
+  'header.title': 'Anders Helenius'
 };

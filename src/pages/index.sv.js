@@ -1,37 +1,42 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import andersHero from '../assets/anders-hero-3-gradient.jpg'
+import InfoSection from '../components/InfoSection'
+//import Img from 'gatsby-image'
+//import andersHero from '../images/header.jpg'
 
 const Container = styled.div`
   display: flex; 
   min-height: 100vh;
   flex-flow: row wrap;
 `;
+//background-image: url(${andersHero });
 
-const Hero = styled.section`
-  background-image: url(${andersHero});
-  background-size: cover;
-  background-postition: center; 
-  margin: auto; 
-  width: 100vh; 
-  min-height: 70vh;
+const InfoText = styled.div`
+  color: #a5e7ed;
+  font-weight: 700;
+  font-size: 28px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1 100%;
-  padding: 20px;
-`;
+  flex-direction: column; 
+  padding: 50px; 
+  align-items: center;
+  justify-content: center; 
+  //max-width: 960px;  
+`; 
 
 const IndexPage = () => (
-  <Container>
-    <Hero>
-      <h1>Hej hej</h1>
-      <p>Välkomment till Gatsby.</p>
-      <p>Testing testing.</p>
-      <Link to="/sv/page-2/">Till sid 2</Link>
-    </Hero>
+ <Container>
+   
+  <div>
+  <InfoSection>
+    <InfoText>
+      <h1 color={'#a5e7ed'}>Lorem Ipsum</h1>
+      <p>Wolf craft beer YOLO, typewriter salvia fam quinoa bushwick occupy godard. Deep v authentic jean shorts humblebrag gastropub distillery quinoa asymmetrical aesthetic williamsburg activated charcoal hammock gentrify direct trade cred. Artisan adaptogen blog man braid leggings skateboard yr sustainable VHS typewriter roof party glossier mustache viral hell of. Meggings williamsburg intelligentsia kale chips helvetica sustainable venmo vinyl chia. Slow-carb stumptown bitters, farm-to-table thundercats tousled banh mi tilde woke chillwave.</p>
+    </InfoText>
+  </InfoSection>
+  </div>
   </Container>
 )
 
-export default IndexPage
+export default IndexPage;
+
