@@ -23,6 +23,17 @@ module.exports = {
         path: `${__dirname}/src/images`,
       }
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        // fonts: [`Hammersmith One`, `sans-serif`],
+        // fonts: [`Cousine`, `monospace`],
+        // fonts: [`Rock Salt`, `cursive`],
+        fonts: [`Timmana`, `Rubik\:300,400,700`, `Roboto\:300,400,700`],
+        // fonts: [`Rubik`, `sans serif`],
+        // fonts: [`Roboto`, `sans serif`],
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`
     ],

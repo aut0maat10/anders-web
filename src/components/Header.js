@@ -14,68 +14,71 @@ const secondaryColor = '#272727'
 const Background = styled.div`
   background-image: url(${andersHero});
   background-size: cover;
-  //background-postition: center; 
-  
+  background-postition: center; 
   //width: 100vh; 
-  min-height: 70vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  //justify-content: center;
   flex: 1 100%;
   padding: 20px;
 `;
 
+const Container = styled.section`
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  maxWidth: 960px; 
+  margin-left: 5%;
+  
+`;
+
+const HeroText = styled.div`
+  display: flex;
+  flex-direction: column; 
+  padding: 10px; 
+  justify-content: center; 
+  margin-top: 20%;
+  margin-left: 5%;   
+`;
+
 const Title = styled.h1`
-  font-family: Rubik;
-  font-size: 45px;  
-  margin: 0;
+  font-family: Rubik, sans-serif;
+  font-size: 50px;  
+  margin-bottom: 15px; 
   color: ${props => props.color || mainColor}
 `;
 
-const Header = (props) => {
-  // var typed = new Typed('#typed', {
-  //   stringsElement: '#typed-strings',
-  //   typeSpeed: 130
-  // });
-  return (
-    <Background>
-    <div
-      style={{
-        //margin: '0 auto',
-        //maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'black',
-            textDecoration: 'none',
-          }}
-        >
-          Home
-        </Link>
-      </h1>
-      <SelectLanguage langs={props.langs} />
-    </div>
-    <div>
-      <Title>
-        <FormattedMessage id="header.title">
-          {props.langs.title}
-        </FormattedMessage>
-      </Title>
-      
-      <div id="typed-strings">
-          <FormattedMessage id="typeWriter.comedian"/>
-          <FormattedMessage id="typeWriter.host" />
-          <FormattedMessage id="typeWriter.writer" />
-      </div>
-      <TypeWriter />
-    </div>
+const TypedStrings = styled.div` 
+`;
+
+const Header = (props) => (
+    
+      <Background>
+        <Wrapper>
+          <SelectLanguage langs={props.langs} />
+        </Wrapper>
+        <HeroText>
+          <Title>
+            <FormattedMessage id="header.title">
+              {props.langs.title}
+            </FormattedMessage>
+          </Title>
+          <TypedStrings id="typed-strings">
+              <FormattedMessage id="typeWriter.comedian"/>
+              <FormattedMessage id="typeWriter.host" />
+              <FormattedMessage id="typeWriter.writer" />
+          </TypedStrings>
+        <TypeWriter />
+      </HeroText>
     </Background>  
+  
 )
-}
+
 
 export default Header;
 {/* <Link to="/sv/page-2/">Till sid 2</Link> */}

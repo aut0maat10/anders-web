@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import InfoSection from '../components/InfoSection'
+import InfoText from '../components/InfoText'
 import Footer from '../components/Footer'
 //import Img from 'gatsby-image'
 //import andersHero from '../images/header.jpg'
@@ -14,26 +15,14 @@ const Container = styled.div`
 `;
 //background-image: url(${andersHero });
 
-const InfoText = styled.div`
-  color: #a5e7ed;
-  font-weight: 700;
-  font-size: 28px;
-  display: flex;
-  flex-direction: column; 
-  padding: 50px; 
-  align-items: center;
-  justify-content: center; 
-  //max-width: 960px;  
-`;
-
 const IndexPage = () => (
   <Container>
 
     <div>
       <InfoSection>
         <InfoText>
-          <h1 color={'#a5e7ed'}>Lorem Ipsum</h1>
-          <p>Wolf craft beer YOLO, typewriter salvia fam quinoa bushwick occupy godard. Deep v authentic jean shorts humblebrag gastropub distillery quinoa asymmetrical aesthetic williamsburg activated charcoal hammock gentrify direct trade cred. Artisan adaptogen blog man braid leggings skateboard yr sustainable VHS typewriter roof party glossier mustache viral hell of. Meggings williamsburg intelligentsia kale chips helvetica sustainable venmo vinyl chia. Slow-carb stumptown bitters, farm-to-table thundercats tousled banh mi tilde woke chillwave.</p>
+          <h1 color={'#a5e7ed'}>Tervetuloa!</h1>
+          <p>Olen Anders Helenius, stand up -koomikko ja käsikirjoittaja. <br /><br />Kierrän Suomen stand up-klubeja ja teattereita kolmella kielellä (suomi, ruotsi ja englanti) jo lähes 20 vuoden kokemuksella.  Lisäksi toimin käsikirjoittajana, mm. Ylen Venla-palkitun “Noin Viikon Uutisten” ydin-tiimissä. <br /><br />Asun saariston pääkaupungissa Paraisilla ja minulla on neljä kouluikäistä lasta. </p>
         </InfoText>
       </InfoSection>
       <Footer>Anders Helenius 2018</Footer>

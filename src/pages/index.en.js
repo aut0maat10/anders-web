@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import InfoSection from '../components/InfoSection'
 import Footer from '../components/Footer'
+import InfoText from '../components/InfoText'
 //import Img from 'gatsby-image'
 //import andersHero from '../images/header.jpg'
 
@@ -14,29 +15,18 @@ const Container = styled.div`
 `;
 //background-image: url(${andersHero });
 
-const InfoText = styled.div`
-  color: #a5e7ed;
-  font-weight: 700;
-  font-size: 28px;
-  display: flex;
-  flex-direction: column; 
-  padding: 50px; 
-  align-items: center;
-  justify-content: center; 
-  //max-width: 960px;  
-`;
-
 const IndexPage = () => (
   <Container>
 
     <div>
       <InfoSection>
         <InfoText>
-          <h1 color={'#a5e7ed'}>Lorem Ipsum</h1>
-          <p>Wolf craft beer YOLO, typewriter salvia fam quinoa bushwick occupy godard. Deep v authentic jean shorts humblebrag gastropub distillery quinoa asymmetrical aesthetic williamsburg activated charcoal hammock gentrify direct trade cred. Artisan adaptogen blog man braid leggings skateboard yr sustainable VHS typewriter roof party glossier mustache viral hell of. Meggings williamsburg intelligentsia kale chips helvetica sustainable venmo vinyl chia. Slow-carb stumptown bitters, farm-to-table thundercats tousled banh mi tilde woke chillwave.</p>
+          <h1 color={'#a5e7ed'}>Welcome!</h1>
+          <p>I am Anders Helenius, a comedian and screenwriter from Finland.<br /><br /> I mostly tour Finnish comedy clubs in Finnish, Swedish and English. You heard it right, trilingual baby! At the moment I write news satire for Finnish television, a show called Noin Viikon Uutiset, a live on tape news-satire show.<br /><br /> I live in the capital of the finnish archipelago, a small town called Pargas. I have four kids.
+</p>
         </InfoText>
       </InfoSection>
-      <Footer>Anders Helenius 2018</Footer>
+      <Footer><p>&#9400; Anders Helenius 2018</p></Footer>
     </div>
   </Container>
 )
