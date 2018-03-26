@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import InfoSection from '../components/InfoSection'
+import Welcome from '../components/Welcome'
 import Footer from '../components/Footer'
 import InfoText from '../components/InfoText'
 //import Img from 'gatsby-image'
@@ -21,7 +22,7 @@ const IndexPage = () => (
     <div>
       <InfoSection>
         <InfoText>
-          <h1 color={'#a5e7ed'}>Welcome!</h1>
+          <Welcome className="pulsate">Welcome!</Welcome>
           <p>I am Anders Helenius, a comedian and screenwriter from Finland.<br /><br /> I mostly tour Finnish comedy clubs in Finnish, Swedish and English. You heard it right, trilingual baby! At the moment I write news satire for Finnish television, a show called Noin Viikon Uutiset, a live on tape news-satire show.<br /><br /> I live in the capital of the finnish archipelago, a small town called Pargas. I have four kids.
 </p>
         </InfoText>

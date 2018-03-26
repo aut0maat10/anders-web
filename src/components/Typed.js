@@ -37,10 +37,10 @@ export default class TypeWriter extends React.Component {
             style={{
               whiteSpace: 'pre',
               fontFamily: 'Rubik',
-              fontSize: '30px',
+              fontSize: '28px',
               fontWeight: '700',
               color: '#272727'
-            }}
+            }} 
             ref={(el) => { this.el = el; }}
           />
         </div>

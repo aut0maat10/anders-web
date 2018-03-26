@@ -29,12 +29,12 @@ module.exports = {
         // fonts: [`Hammersmith One`, `sans-serif`],
         // fonts: [`Cousine`, `monospace`],
         // fonts: [`Rock Salt`, `cursive`],
-        fonts: [`Timmana`, `Rubik\:300,400,700`, `Roboto\:300,400,700`],
+        fonts: [`Timmana`, `Rubik\:300,400,700`, `Roboto\:300,400,700`, `Rock Salt`, `cursive`],
         // fonts: [`Rubik`, `sans serif`],
         // fonts: [`Roboto`, `sans serif`],
       }
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`
+    `gatsby-plugin-sharp`,
     ],
 }

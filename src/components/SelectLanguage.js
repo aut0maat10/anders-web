@@ -9,9 +9,13 @@ const LinkWrapper = styled.div`
 `;
 
 const Li = styled.li`
-  display: flex; 
-  width: 40px;  
-  margin: 0; 
+  display: flex;   
+  margin-right: 25px; 
+  margin-top: 15px; 
+  &:hover {
+    transform: scale(2.2) rotate(-3deg);
+    font-weight: bold; 
+  }
 `;
 
 const Ul = styled.ul`

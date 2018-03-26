@@ -3,7 +3,7 @@ module.exports = {
   'header.title': 'Anders Helenius',
   'typeWriter.comedian': 'Comedian ^1000',
   'typeWriter.host': 'TV Host ^1100',
-  'typeWriter.writer': 'Writer ^2500',
+  'typeWriter.writer': 'Screenwriter ^2500',
 
   
 };
