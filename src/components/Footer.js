@@ -10,7 +10,6 @@ const Footer = styled.section`
   align-items: center;
   justify-content: center;
   flex: 1;
-  
   min-height: 100%;
 `;
 
