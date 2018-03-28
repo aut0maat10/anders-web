@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const InfoSection = styled.section`
-  background-color: #272727;
+const ReadMoreWrapper = styled.section`
+  background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,4 +10,4 @@ const InfoSection = styled.section`
   flex: 1 100%; 
 `;
 
-export default InfoSection; 
+export default ReadMoreWrapper;

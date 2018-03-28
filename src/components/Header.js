@@ -27,7 +27,7 @@ const Background = styled.div`
   background-size: cover;
   background-postition: center; 
   //width: 100vh; 
-  min-height: 75vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   //justify-content: center;
@@ -35,6 +35,7 @@ const Background = styled.div`
   padding: 20px;
   @media (max-width: 600px) {
      background-image: url(${andersMobile});
+     height: 30vh;  
   }   
  }  
 `;

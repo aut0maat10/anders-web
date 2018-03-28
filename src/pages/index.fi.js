@@ -5,6 +5,9 @@ import InfoSection from '../components/InfoSection'
 import InfoText from '../components/InfoText'
 import Welcome from '../components/Welcome'
 import Footer from '../components/Footer'
+import Card from '../components/Card'
+import ReadMore from '../components/ReadMore'
+import ReadMoreWrapper from '../components/ReadMoreWrapper'
 //import Img from 'gatsby-image'
 //import andersHero from '../images/header.jpg'
 
@@ -22,10 +25,13 @@ const IndexPage = () => (
     <div>
       <InfoSection>
         <InfoText>
-          <Welcome className="pulsate">Tervetuloa!</Welcome>
-          <p>Olen Anders Helenius, stand up -koomikko ja käsikirjoittaja. <br /><br />Kierrän Suomen stand up-klubeja ja teattereita kolmella kielellä (suomi, ruotsi ja englanti) jo lähes 20 vuoden kokemuksella.  Lisäksi toimin käsikirjoittajana, mm. Ylen Venla-palkitun “Noin Viikon Uutisten” ydin-tiimissä. <br /><br />Asun saariston pääkaupungissa Paraisilla ja minulla on neljä kouluikäistä lasta. </p>
+          <Welcome className="pulsate">Olen Anders.<br />Kierrän Suomen stand up-klubeja ja teattereita kolmella kielellä. Toimin käsikirjoittajana Ylen Venla-palkitun “Noin Viikon Uutisten” ydin-tiimissä.<br /> Asun saariston pääkaupungissa Paraisilla. <br />Minulla on neljä kouluikäistä lasta.</Welcome>
         </InfoText>
       </InfoSection>
+      <ReadMoreWrapper>
+        <ReadMore>Lisätietoa minusta:</ReadMore>
+      </ReadMoreWrapper>
+      <Card />
       <Footer><p>&#9400; Anders Helenius 2018</p></Footer>
     </div>
   </Container>

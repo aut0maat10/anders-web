@@ -2,12 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 
 const InfoText = styled.div`
-  color: #a5e7ed;
+  color: #f4f4f4;
   font-weight: 400;
   font-size: 12pt;
   display: flex;
   flex-direction: column; 
-  padding: 5px; 
+  padding-top: 20px;
+  padding-bottom: 50px; 
   align-items: center;
   justify-content: center; 
   text-align: center; 

@@ -5,6 +5,9 @@ import InfoSection from '../components/InfoSection'
 import InfoText from '../components/InfoText'
 import Welcome from '../components/Welcome'
 import Footer from '../components/Footer'
+import Card from '../components/Card'
+import ReadMore from '../components/ReadMore'
+import ReadMoreWrapper from '../components/ReadMoreWrapper'
 
 //import Img from 'gatsby-image'
 //import andersHero from '../images/header.jpg'
@@ -22,11 +25,13 @@ const IndexPage = () => (
   <div>
   <InfoSection>
     <InfoText>
-          <Welcome className="pulsate">Välkommen!</Welcome>
-      <p>Jag är Anders Helenius, en finlandssvensk stand up -komiker och manusförfattare. <br /><br />Jag turnérar främst i Finland på finska, svenska och engelska, ibland också spontana gig i Sverige. Utöver det jobbar jag som manusförfattare, bl.a  för det Venla-belönta satirprogrammet ‘Närapå en veckas nyheter’.<br /><br />Jag bor i skärgårdens huvudstad Pargas, och har fyra barn i skolåldern.
-    </p>
+          <Welcome className="pulsate">Jag är Anders.<br />Jag gör stand up på finska, svenska och engelska. Jag jobbar som manusförfattare för det Venla-belönta satirprogrammet "Närapå en veckas nyheter". Jag bor i skärgårdens huvudstad Pargas, och har fyra barn i skolåldern.</Welcome>
     </InfoText>
   </InfoSection>
+  <ReadMoreWrapper>
+    <ReadMore>Mer om vad jag gör:</ReadMore>
+  </ReadMoreWrapper>
+  <Card />
   <Footer><p>&#9400; Anders Helenius 2018</p></Footer>
   </div>
   </Container>
