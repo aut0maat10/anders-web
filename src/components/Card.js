@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { FormattedMessage } from 'react-intl'
 import andersHero from '../images/header.jpg'
 import andersStage from '../images/stage-c.jpg'
-import andersPen from '../images/watermark-c.jpg'
+import andersPen from '../images/studio-c.jpg'
 import andersStudio from '../images/studio-b.jpg'
 
 const Container = styled.section`
@@ -51,7 +51,7 @@ const CardBox = styled.div`
     .front, .back{
         font-size: 16px; 
         position: absolute;
-        width: 300px;
+        width: 286px;
         height: 400px;
         border-radius:10px;
         backface-visibility:hidden;
@@ -86,20 +86,28 @@ export default class Card extends React.Component {
         </CardBox>
         <CardBox>
           <div className="front"
-            style={{ background: `linear-gradient(45deg, rgba(156,30,97,1) 0%, rgba(0,128,128,.1) 0%), url(${andersStudio}` }}>
+            style={{ background: `linear-gradient(45deg, rgba(156,30,97,1) 0%, rgba(0,128,128,.1) 0%), url(${andersStudio}`, color: '#fff'}}>
             <h1><FormattedMessage id="cardTitle.tv" /></h1>
           </div>
           <div className="back">
-            Testing
+            <div>
+              <strong><FormattedMessage id="tvCard.title" /></strong><br /><br />
+              <FormattedMessage id="tvCard.body" /><br /><br />
+              <FormattedMessage id="tvCard.end" />
+            </div>
           </div>
         </CardBox>
         <CardBox>
           <div className="front"
             style={{ background: `linear-gradient(45deg, rgba(156,30,97,1) 0%, rgba(0,128,128,.1) 0%), url(${andersPen}` }}>
-            <h1><FormattedMessage id="cardTitle.screenwriter" /></h1>
+            <h1><FormattedMessage id="cardTitle.misc" /></h1>
           </div>
           <div className="back">
-            Testing
+            <div>
+              <strong><FormattedMessage id="miscCard.title" /></strong><br /><br />
+              <FormattedMessage id="miscCard.body" /><br /><br />
+              <FormattedMessage id="miscCard.end" />
+            </div>
           </div>
         </CardBox>
       </Container>

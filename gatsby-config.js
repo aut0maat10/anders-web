@@ -29,7 +29,7 @@ module.exports = {
         // fonts: [`Hammersmith One`, `sans-serif`],
         // fonts: [`Cousine`, `monospace`],
         // fonts: [`Rock Salt`, `cursive`],
-        fonts: [`Timmana`, `Rubik\:300,400,700`, `Roboto\:300,400,700`, `Rock Salt`, `cursive`],
+        fonts: [`Timmana`, `Rubik\:300,400,700`, `Roboto\:300,400,700`, `Montserrat\:900`, `Heebo\:400,900`, ],
         // fonts: [`Rubik`, `sans serif`],
         // fonts: [`Roboto`, `sans serif`],
       }

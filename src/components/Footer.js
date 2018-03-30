@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Footer = styled.section`
   background-color: #272727;
   color: #fff; 
+  font-size: 12pt; 
   display: flex;
   flex-direction: column;
   padding: 20px;
