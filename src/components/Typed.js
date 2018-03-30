@@ -12,7 +12,7 @@ export default class TypeWriter extends React.Component {
     const { strings } = this.props;
     // You can pass other options here, such as typing speed, back speed, etc.
     const options = {
-      startDelay: 1000,
+      startDelay: 500,
       stringsElement: '#typed-strings',
       //strings: strings,
       typeSpeed: 170,
