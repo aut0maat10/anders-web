@@ -86,7 +86,7 @@ export default class Card extends React.Component {
         </CardBox>
         <CardBox>
           <div className="front"
-            style={{ background: `linear-gradient(45deg, rgba(156,30,97,1) 0%, rgba(0,128,128,.1) 0%), url(${andersStudio}`, color: '#fff'}}>
+            style={{ background: `linear-gradient(45deg, rgba(156,30,97,1) 0%, rgba(0,128,128,.1) 0%), url(${andersStudio}` }}>
             <h1><FormattedMessage id="cardTitle.tv" /></h1>
           </div>
           <div className="back">
